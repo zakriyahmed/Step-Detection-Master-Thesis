@@ -12,3 +12,6 @@ real-time processing efficiency. Traditionally, the accuracy of the models was d
 by comparing the predicted number of steps to the original number of steps and the F1
 score. This work also investigates how accurate the model is in predicting steps close to
 the actual labels by calculating mean absolute error.
+
+![](https://github.com/zakriyahmed/Step-Detection-Master-Thesis/Results/plot.gif)
+
