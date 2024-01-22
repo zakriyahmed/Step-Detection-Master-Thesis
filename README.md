@@ -13,5 +13,9 @@ by comparing the predicted number of steps to the original number of steps and t
 score. This work also investigates how accurate the model is in predicting steps close to
 the actual labels by calculating mean absolute error.
 
-![](https://github.com/zakriyahmed/Step-Detection-Master-Thesis/Results/plot.gif)
+![](https://github.com/zakriyahmed/Step-Detection-Master-Thesis-/blob/main/Results/plot.gif)
 
+
+## Models
+
+![](https://github.com/zakriyahmed/Step-Detection-Master-Thesis-/blob/main/Results/2_models.svg)
