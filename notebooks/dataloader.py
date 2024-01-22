@@ -24,7 +24,7 @@ class Dataloader():
         self.name = []
         self.IsActivity = activity
         self.markers = {}
-        good = np.sort(os.listdir('good'))
+        good = np.sort(os.listdir('dataset'))
         
 
         #create a list of columns names to be used for loading each value
@@ -44,18 +44,18 @@ class Dataloader():
         self.testindexlabels = pd.DataFrame(columns = self.col_names_label)
         
         for folder in good:
-            subfolder = np.sort(os.listdir(f'good/{folder}'))
+            subfolder = np.sort(os.listdir(f'dataset/{folder}'))
             #check each file in the folder
             
             for files in sorted(subfolder):
                 #if its a csv file, i.e. data file
                 if files.endswith('.csv'):
-                    self.datafiles.append(f'good/{folder}/{files}')
+                    self.datafiles.append(f'dataset/{folder}/{files}')
                     self.name.append(f'{folder}/{files}')
-                    self.markers[f'good/{folder}/{files}'] = [folder]
+                    self.markers[f'dataset/{folder}/{files}'] = [folder]
                     
                 if files.endswith('.csv.stepMixed'):
-                    self.labelfiles.append(f'good/{folder}/{files}')   
+                    self.labelfiles.append(f'dataset/{folder}/{files}')   
                     
                 
     def split(self,names):
